@@ -1,0 +1,72 @@
+name:                gcp-jan2023
+version:             0.1.0.0
+github:              "githubuser/gcp-jan2023"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2023 Author name here"
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/gcp-jan2023#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- http-conduit
+- http-client
+- http-client-tls
+- bytestring
+- process
+- utf8-string
+- text
+- aeson
+- network-uri
+
+default-extensions:
+- OverloadedStrings
+- DeriveGeneric
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
+
+executables:
+  gcp-jan2023-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - gcp-jan2023
+
+tests:
+  gcp-jan2023-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - gcp-jan2023

@@ -1,0 +1,13 @@
+{
+  "name": "projects/838364842649",
+  "parent": "folders/1079747026781",
+  "projectId": "fred-hsu-veos",
+  "state": "ACTIVE",
+  "displayName": "Fred Hsu vEOS",
+  "createTime": "2018-02-02T22:59:00.076Z",
+  "updateTime": "2022-11-30T07:10:53.850Z",
+  "etag": "aGL/fwhqVqKASbw2SLEteA==",
+  "labels": {
+    "firebase": "enabled"
+  }
+}
